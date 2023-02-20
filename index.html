@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hello</title>
+    <style>
+      * {
+        background-color: transparent;
+        margin: 0;
+        padding: 0;
+      }
+      .drag {
+        display: block;
+        height: 25px;
+        background-color: blue;
+        -webkit-app-region: drag;
+      }
+      body {
+        border: 1px solid black;
+        height: 100vh;
+        box-sizing: border-box;
+        -webkit-backdrop-filter: blur(50px);
+        background-color: #0008;
+        box-shadow: 0 1 8px rgba(0, 0, 0,.3);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="drag"></div>
+    <h1>Оно не работает!</h1>
+  </body>
+</html>
